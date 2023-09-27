@@ -1,0 +1,29 @@
+/* selector de elemento (selector de etiqueta) */
+h1 {
+	background-color: black;
+	color: #ffff;
+}
+
+/* selector de pseudoclase */
+li:hover {
+	color: black;
+}
+
+/* selector de id */
+#titulo2 {
+	text-align: center;
+	background-color: blueviolet;
+	color: rgb(255, 255, 255, 0.55);
+}
+
+/* selector de clase */
+.texto-en-rojo {
+	color: red;
+}
+
+/* Si por alguna razon quiero anular la precedencia de una regla
+ 	puedo utilizar el modificar !important */
+/* Siempre tener en cuenta que ante igualdad de condiciones
+	va a tener precedencia la regla que se encuentra mas abajo */
+/* Asimismo si no hay igualdad, siempre va a tener precedencia
+	la regla que sea mas especifica en cuanto al selector */
