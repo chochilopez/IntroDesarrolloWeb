@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1{
+	text-align: center;
+	color: white;
+	font-size: 2rem; /* 2rem = 32px */
+	margin: 5px 10px 15px 20px; /* top right bottom left */
+	border: 2px double greenyellow;
+	width: 400px; /*400+32+2 = 434 2+32+332+32+2 = 400*/
+	background: blueviolet;
+	height: 200px;
+	padding: 20px 10px ; /* premier valor top bottom segundo izq der */
+}

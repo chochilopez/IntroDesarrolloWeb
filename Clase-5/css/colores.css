@@ -1,0 +1,30 @@
+body {
+	background: #EEE5E5;
+}
+
+h1 {
+	/* Seleccion de color a traves de nombre color */
+	/* color: blueviolet; */
+	color: #19647E;
+}
+
+.color1 {
+	/* selector Red Gren Blue - rgba Alpha Chanel (Opacidad) */
+	/* color: rgb(05, 12, 200); */
+	color: #19647E;
+}
+
+.color2 {
+	/* Valor de 6 digitos hexadecimales */ 
+	/* 0 1 2 3 4 5 6 7 8 9 A B C D E F */
+	color: #28AFB0;
+}
+
+.color3 {
+	/* Hue Saturation Ligthness Alpha */
+	/* Matiz o tonalidad 0-360, Saturacion %, Luminosidad %, Opacidad 0.0 1.0 */
+	/* color: hsla(120, 100%, 50%, 1.0); */
+	color: #DDCECD;
+}
+
+/* Herramienta para ver colores en chrome ColorPick eyedropper */
