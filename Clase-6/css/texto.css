@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+	margin: 5px;
+	padding: 10px;
+}
+
+p::first-letter {
+	font-size: 50px;
+	margin-right: 10px;
+	font-family: Pacifico, fantasy;
+}
+
+a {
+	text-decoration: underline dashed 2px  green;
+}
+
+em {
+	/* linea color estilo grosor */
+	text-decoration: underline red wavy 2px;
+	/* linea: underline, overline, line-through */
+	/* estilos: solid, double, wavy, dotted, dashed */ 
+}
+
+.primer-parrafo {
+	text-transform: uppercase;
+	/* uppercase, lowercase, capitalize */
+}
+
+.segundo-parrafo {
+	font-size: 1.5em;
+	font-weight: 400;
+	/* 100-900 , normal, bold, light, lighter, bolder */
+	font-family: 'Pixelify Sans', monospace;
+	/* serif sans-serif monaspace cursive fantasy */
+	/* fallback */
+}
+
+.tercer-parrafo {
+	text-shadow: 22px 20px 3px grey;
+	font-family: 'Autour One', serif;
+}
+
+
+.cuarto-parrafo {
+	font-size: 20px;
+	line-height: 1.5;
+	word-spacing: 10px;
+	letter-spacing: 2px;
+}
+

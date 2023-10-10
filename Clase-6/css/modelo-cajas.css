@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("../images/fondo.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+p {
+	border: 1px dotted indianred;
+	padding: 10px;
+	margin: 20px 80px 10px 30px;
+
+}
+
+h2 {
+	width: 50vw;
+	margin: auto;
+	text-align: center;
+	/* movimiento x, movimiento y, radio, color */ 
+	box-shadow: 15px 10px 10px grey;
+}
+
+h3 {
+	background: skyblue;
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/* tamaño estilo color */
+	border-top: 10px solid #0000FF;
+	border-radius: 20px 0px 20px 0px ;
+}
