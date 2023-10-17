@@ -14,6 +14,7 @@ body {
 	width: 75vw;
 	height: 80vh;
 	margin: 2em auto;
+	position: relative;
 }
 
 .contenedor-interno {
@@ -30,8 +31,10 @@ body {
 }
 
 .absolute {
-	display: none;
 	background: skyblue;
+	position: absolute;
+	top: 50%;
+	left: 50%;
 }
 
 .relative {
