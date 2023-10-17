@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+}
+
+body {
+	font-size: 2rem;
+	padding: 1em;
+}
+
+h1 {
+	margin: 1em;
+}
+
+ul, ol {
+	margin: 0.5em;
+}
+
+ol {
+	list-style-type: hebrew;
+
+	text-align: center;
+	list-style-position: inside;
+}
+
+ol li {
+	margin-left: 1em ;
+	line-height: 1.5;
+
+}
+
+ul {
+	list-style-position: outside;
+	margin-left: 4em;
+	list-style-type: none;
+	 /* list-style-image: url(../images/ok-32.png); */
+}
+
+ul li:before {
+	font-size: 1em;
+	color: red;
+	content: '\1F60D' ;
+}
+
+li:before {
+	position: absolute;
+	left: 350px;
+}
+/* unicode */
+/* home.unicode.org */
+/* https://symbl.cc/en/unicode/table/ */
+/* emojipedia.org */

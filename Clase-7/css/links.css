@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 2rem;
+	padding: 2em;
+	font-family: 'Young Serif', cursive;
+	
+}
+
+h1 {
+	margin: 1em;
+	font-family: 'Tilt Neon', sans-serif;
+	padding: 4em;
+	background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+a {
+	font-family: 'Tilt Neon', sans-serif;
+	color: hsla(211, 50%, 50%, 1.0);
+	text-decoration: underline 2px solid hsla(0, 50%, 50%, 0);
+	/* transition: text-decoration .2s ease-in; */
+	/* transition -> shorthand */
+	/*
+	transition-delay: 0.1s;
+	transition-property: color, text-decoration;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	*/
+	/* transition-delay */
+	/* transition-propierty */
+	/* transition-duration */
+	/* transition-timming-function */
+	/* nombre propiedad - duracion transicion - funcion tiempo - demora de inicio del efecto */
+}
+/*
+a:hover {
+	text-decoration: underline 2px wavy red;
+	color: red;
+}
+*/
+
+/* Especificidad: elemento +1, clase +10, pseudocla +10 = 21 */
+
+h1 .hvr-fade:hover {
+	background: blue;
+}
