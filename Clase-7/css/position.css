@@ -24,7 +24,6 @@ body {
 }
 
 .redondo {
-	background: red;
 	border-radius: 50%;
 	width: 5em;
 	height: 5em;
@@ -32,16 +31,23 @@ body {
 
 .absolute {
 	display: none;
+	background: skyblue;
 }
 
 .relative {
 	display: none;
+	background: blueviolet;
+	color: azure;
 }
 
 .fixed {
 	display: none;
+	background: orangered;
+	color: azure;
 }
 
 .sticky {
 	display: none;
+	background: darkgreen;
+	color: azure;	
 }
