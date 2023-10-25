@@ -10,3 +10,30 @@ body {
 	font-family: 'Syne Mono', fantasy;
 	font-size: 1.4rem;
 }
+
+p {
+	margin: 5%;
+	text-align: justify;
+}
+
+.caja {
+	background: teal;
+	width: 20vw;
+	height: 20vw;
+	color: azure;
+	margin: 4%;
+}
+
+.izquierda {
+	float: left;
+	margin-right: 2%;
+}
+
+.derecha {
+	float: right;
+}
+
+section {
+	background: cornflowerblue;
+	display: flow-root;
+}

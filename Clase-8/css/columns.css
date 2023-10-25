@@ -10,3 +10,27 @@ body {
 	font-family: Paprika, serif;
 	margin: 1em;
 }
+
+p {
+	margin-bottom: 1em;
+}
+
+.columnas {
+	columns: 10 250px;
+	/* estilos rule none hidden dotted dashed solid double groove ridge */
+	/* column-rule-width: 2px;
+	column-rule-style: solid;
+	column-rule-color: gray; */
+	column-gap: 2vw;
+}
+
+.columnas::first-line{
+	background: red;
+}
+
+.cita {
+	column-span: all;
+	margin: 2em 0;
+	font-size: 1.5rem;
+	text-align: center;
+}

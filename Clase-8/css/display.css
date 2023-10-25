@@ -11,3 +11,28 @@ body {
 	font-size: 1.5rem;
 }
 
+main {
+	background: teal;
+	padding: 1em;
+}
+
+p {
+	margin-bottom: 4px;
+	/* padding top - right - bottom - left */
+	/* padding top/bottom right/left */
+	padding: 10px 20px;
+}
+
+.parrafo1 {
+	background: mediumaquamarine;
+}
+
+.parrafo2 {
+	background: mediumseagreen;
+}
+
+p span {
+	display: inline;
+	background: darkgoldenrod;
+	padding: 100px;
+}
