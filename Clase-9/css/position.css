@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 2rem;
+	min-height: 200vh;
+}
+
+.contenedor-externo {
+	border: 3px dashed cadetblue;
+	width: 75vw;
+	height: 80vh;
+	margin: 2em auto;
+	position: relative;
+}
+
+.contenedor-interno {
+	border: 2px double seagreen;
+	width: 40vw;
+	height: 50vh;
+	margin: 3em auto;
+}
+
+.redondo {
+	border-radius: 50%;
+	width: 5em;
+	height: 5em;
+}
+
+.absolute {
+	background: skyblue;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.relative {
+	display: none;
+	background: blueviolet;
+	color: azure;
+}
+
+.fixed {
+	display: none;
+	background: orangered;
+	color: azure;
+}
+
+.sticky {
+	display: none;
+	background: darkgreen;
+	color: azure;	
+}
