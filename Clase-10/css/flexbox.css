@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Code Pro', cursive;
+	min-height: 100vh;
+	padding: 1em;
+}
+
+.contenedor {
+	margin: 2em auto;
+	max-width: 80vh;
+	min-height: 40vh;
+	border: 2px solid indianred;
+	color: azure;
+	display: flex;
+}
+
+.caja {
+	min-height: 40%;
+	min-width: 10%;
+	background: mediumslateblue;
+	font-size: 2rem;
+	padding: 0.6em;
+	border: 1px solid azure;
+}
+
+.flex-container {
+	background: indianred;
+	color: azure;
+	width: 50%;
+	margin: 0.5em auto;
+}
+
+.flex-item {
+	background: mediumslateblue;
+	color: azure;
+	width: 50%;
+	margin: 0.5em auto;
+}
