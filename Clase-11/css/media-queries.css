@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Agbalumo, cursive;
+}
+
+.contenedor {
+	border: 2px dotted dodgerblue;
+	max-width: 800px;
+}
+
+.caja {
+	width: 100px;
+	height: 100px;
+	background: mediumorchid;
+	display: inline-block;
+}
+
+@media (max-width: 400px) {
+	.caja {
+		display: block;
+	}
+}
