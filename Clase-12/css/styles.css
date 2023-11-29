@@ -1,0 +1,45 @@
+body {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+div {
+	background: mediumorchid;
+}
+
+.container-chico {
+	width: 50%;
+}
+
+.container-medio {
+	width: 80%;
+}
+
+.grilla {
+	background: mediumaquamarine;
+	margin-top: 1em;
+}
+
+.grilla .col {
+	border: 1px solid mediumaquamarine;
+}
+
+/* small */
+@media (max-width: 767px)  {
+	.container-chico {
+		width: 100%;
+		background: red;
+	}
+
+}
+
+/* medio */
+@media (min-width: 768px) and (max-width: 991px)  {
+	.container-medio {
+		width: 100%;
+		background: blue;
+	}
+
+}
+
