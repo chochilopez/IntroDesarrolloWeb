@@ -1,45 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Roboto&display=swap');
+
+/* Variables, reset y generales */
+:root {
+	--primario: #4073AF;
+	--secundario: #6E95C3;
+	--terciario: #DBE2EF;
+	--negro: #17273B;
+	--blanco: #F0F4F9;
+	--fuente1: Lato;
+	--fuente2: Montserrat;
+	--fuente3: 'Open Sans';
+	--fuente4: Roboto;
+	--grande:  50px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+	list-style: none;
+}
+
+a {
+	color: var(--negro);
+	text-decoration: none;
+}
+
 body {
+	background: var(--blanco);
+	font-family: var(--fuente1);
+	color: var(--negro);
+}
+/* FIN Variables, reset y generales */
+
+/* Header */
+.barra {
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	flex-direction: column;
+	background: var(--primario);
+	padding: 0 10px;
+	color: var(--blanco);
 }
 
-div {
-	background: mediumorchid;
+.marca_logo {
+	height: 50px;
+	padding: 5px;
 }
 
-.container-chico {
-	width: 50%;
+.marca_kiosco {
+	font-family: var(--fuente2);
+	font-weight: 800;
+	font-size: 22px;
 }
 
-.container-medio {
-	width: 80%;
+.marca_nombre {
+	margin-left: 5px;
+	font-family: var(--fuente4);
+	font-weight: 600;
+	font-style: italic;
+	font-size: 20px;
 }
 
-.grilla {
-	background: mediumaquamarine;
-	margin-top: 1em;
+.barra_links .link {
+	font-family: var(--fuente3);
+	color: var(--blanco);
+	padding: 0 10px;
+	height: 35px;
+	border-radius: 3px;
+	border: 2px solid var(--primario);
+	transition: 0.5s linear;
 }
 
-.grilla .col {
-	border: 1px solid mediumaquamarine;
+.barra_links .icono {
+	color: var(--blanco);
+	padding: 0 5px;
+	height: 35px;
+	transition: 0.3s linear;
 }
 
-/* small */
-@media (max-width: 767px)  {
-	.container-chico {
-		width: 100%;
-		background: red;
+.barra_links .link:hover {
+	border: 2px solid var(--blanco);
+}
+
+
+.barra_links .icono:hover {
+	color: var(--negro);
+}
+
+.barra_dropdown {
+	position: relative;
+	display: none;
+	width: 100px;
+	text-align: center;
+
+	.dropdown_boton i {
+		background: var(--primario);
+		color: var(--blanco);
+		cursor:  pointer;
+		width: 100px;
+		height: 35px;
+		font-size: 30px;
 	}
 
-}
-
-/* medio */
-@media (min-width: 768px) and (max-width: 991px)  {
-	.container-medio {
-		width: 100%;
-		background: blue;
+	.dropdown_links {
+		display: none;
+		position: absolute;
+		background: var(--primario);
+		min-width: 100px;			
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
 	}
 
+	.dropdown_links .link {
+		padding: 12px 16px;
+		color: var(--blanco);
+		display: block;
+	}
+
+	.dropdown_links .link:hover {
+		background: var(--terciario);
+		color: var(--negro);
+	}
+
+	.dropdown_contacto {
+		padding-bottom: 5px;
+	}
+
+	.dropdown_contacto .icono {
+		padding: 5px;
+		color: var(--negro);
+	}
+
+	.dropdown_contacto .icono:hover {
+		padding: 5px;
+		color: var(--blanco);
+	}
 }
+
+.barra_dropdown:hover .dropdown_links {
+	display: block;
+}
+/* FIN Header */
+
+/* Media queries */
+/* Pequeño */
+@media (max-width: 576px) {
+	.barra .barra_links {
+		display: none;
+	}
+
+	.barra .barra_dropdown {
+		display: block;
+	}
+}
+
+/* Mediano */
+@media (min-width: 577px) and (max-width: 1000px) {}
+
+/* Largo */
+@media (min-width: 1001px) {}
+
+
+
 
