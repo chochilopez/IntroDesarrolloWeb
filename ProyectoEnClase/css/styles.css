@@ -41,6 +41,12 @@ body {
 	background: var(--primario);
 	padding: 0 10px;
 	color: var(--blanco);
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.barra_marca {
+	display: flex;
+	align-items: center;
 }
 
 .marca_logo {
@@ -50,16 +56,14 @@ body {
 
 .marca_kiosco {
 	font-family: var(--fuente2);
-	font-weight: 800;
 	font-size: 22px;
 }
 
 .marca_nombre {
 	margin-left: 5px;
-	font-family: var(--fuente4);
-	font-weight: 600;
-	font-style: italic;
-	font-size: 20px;
+	font-weight: 800;
+	font-family: var(--fuente1);
+	font-size: 22px;
 }
 
 .barra_links .link {
@@ -142,6 +146,77 @@ body {
 	display: block;
 }
 /* FIN Header */
+
+/*
+.seccion_principal {
+	background: #4C81BD;
+	height: 80vh;
+	border-radius: 0 0 150px 150px;
+	-webkit-border-radius: 0 0 150px 150px;
+	-moz-border-radius: 0 0 150px 150px;
+	-ms-border-radius: 0 0 150px 150px;
+	-o-border-radius: 0 0 150px 150px;
+	position: relative;
+	z-index: -5;
+
+	.poligono1 {
+		clip-path: circle(50% at 50% 50%);
+		background: #5B8BC2;
+		height: 800px;
+		width: 800px;
+		position: absolute;
+		z-index: -1;
+		top: -300px;
+		right: -200px;
+	}
+	
+	.poligono2 {
+		width: 0px;
+		height: 0px;
+		border-right: 260px solid transparent;
+		border-top: 260px solid #6A96C8;
+		border-left: 260px solid #6A96C8;
+		border-bottom: 260px solid #6A96C8;
+		border-top-left-radius: 260px;
+		border-top-right-radius: 260px;
+		border-bottom-left-radius: 260px;
+		border-bottom-right-radius: 260px;
+		bottom: 0;
+		left: -100px;
+		position: absolute;
+		z-index: -2;
+	}
+	
+	.poligono3 {
+		clip-path: circle(50% at 50% 50%);
+		background:#79A0CD;
+		height: 1400px;
+		width: 1400px;
+		position: absolute;
+		top: -800px;
+		left: -500px;
+		z-index: -3;
+	}
+	
+	.poligono4 {
+		clip-path: circle(50% at 50% 50%);
+		background:#88ABD3;
+		height: 1500px;
+		width: 1500px;
+		position: absolute;
+		z-index: -4;
+		top: -800px;
+		left: -300px;
+	}
+
+	.principal_carousel {
+		background: var(--primario);
+		height: 500px;
+		width: 400px;
+		height: 250px;
+		clip-path: inset(0% 0% 0% 0% round 5%);
+	}
+} */
 
 /* Media queries */
 /* Pequeño */
