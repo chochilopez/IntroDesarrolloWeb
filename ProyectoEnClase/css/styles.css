@@ -42,112 +42,113 @@ body {
 	padding: 0 10px;
 	color: var(--blanco);
 	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-}
-
-.barra_marca {
-	display: flex;
-	align-items: center;
-}
-
-.marca_logo {
-	height: 50px;
-	padding: 5px;
-}
-
-.marca_kiosco {
-	font-family: var(--fuente2);
-	font-size: 22px;
-}
-
-.marca_nombre {
-	margin-left: 5px;
-	font-weight: 800;
-	font-family: var(--fuente1);
-	font-size: 22px;
-}
-
-.barra_links .link {
-	font-family: var(--fuente3);
-	color: var(--blanco);
-	padding: 0 10px;
-	height: 35px;
-	border-radius: 3px;
-	border: 2px solid var(--primario);
-	transition: 0.5s linear;
-}
-
-.barra_links .icono {
-	color: var(--blanco);
-	padding: 0 5px;
-	height: 35px;
-	transition: 0.3s linear;
-}
-
-.barra_links .link:hover {
-	border: 2px solid var(--blanco);
-}
 
 
-.barra_links .icono:hover {
-	color: var(--negro);
-}
+	.barra_marca {
+		display: flex;
+		align-items: center;
+	}
 
-.barra_dropdown {
-	position: relative;
-	display: none;
-	width: 100px;
-	text-align: center;
+	.marca_logo {
+		height: 50px;
+		padding: 5px;
+	}
 
-	.dropdown_boton i {
-		background: var(--primario);
+	.marca_kiosco {
+		font-family: var(--fuente2);
+		font-size: 22px;
+	}
+
+	.marca_nombre {
+		margin-left: 5px;
+		font-weight: 800;
+		font-family: var(--fuente1);
+		font-size: 22px;
+	}
+
+	.barra_links .link {
+		font-family: var(--fuente3);
 		color: var(--blanco);
-		cursor:  pointer;
-		width: 100px;
+		padding: 0 10px;
 		height: 35px;
-		font-size: 30px;
+		border-radius: 3px;
+		border: 2px solid var(--primario);
+		transition: 0.5s linear;
 	}
 
-	.dropdown_links {
-		display: none;
-		position: absolute;
-		background: var(--primario);
-		min-width: 100px;			
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		z-index: 1;
-	}
-
-	.dropdown_links .link {
-		padding: 12px 16px;
+	.barra_links .icono {
 		color: var(--blanco);
+		padding: 0 5px;
+		height: 35px;
+		transition: 0.3s linear;
+	}
+
+	.barra_links .link:hover {
+		border: 2px solid var(--blanco);
+	}
+
+
+	.barra_links .icono:hover {
+		color: var(--negro);
+	}
+
+	.barra_dropdown {
+		position: relative;
+		display: none;
+		width: 100px;
+		text-align: center;
+
+		.dropdown_boton i {
+			background: var(--primario);
+			color: var(--blanco);
+			cursor:  pointer;
+			width: 100px;
+			height: 35px;
+			font-size: 30px;
+		}
+
+		.dropdown_links {
+			display: none;
+			position: absolute;
+			background: var(--primario);
+			min-width: 100px;			
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown_links .link {
+			padding: 12px 16px;
+			color: var(--blanco);
+			display: block;
+		}
+
+		.dropdown_links .link:hover {
+			background: var(--terciario);
+			color: var(--negro);
+		}
+
+		.dropdown_contacto {
+			padding-bottom: 5px;
+		}
+
+		.dropdown_contacto .icono {
+			padding: 5px;
+			color: var(--negro);
+		}
+
+		.dropdown_contacto .icono:hover {
+			padding: 5px;
+			color: var(--blanco);
+		}
+	}
+
+	.barra_dropdown:hover .dropdown_links {
 		display: block;
 	}
-
-	.dropdown_links .link:hover {
-		background: var(--terciario);
-		color: var(--negro);
-	}
-
-	.dropdown_contacto {
-		padding-bottom: 5px;
-	}
-
-	.dropdown_contacto .icono {
-		padding: 5px;
-		color: var(--negro);
-	}
-
-	.dropdown_contacto .icono:hover {
-		padding: 5px;
-		color: var(--blanco);
-	}
-}
-
-.barra_dropdown:hover .dropdown_links {
-	display: block;
 }
 /* FIN Header */
 
-/*
+/* INICIO Principal */
 .seccion_principal {
 	background: #4C81BD;
 	height: 80vh;
@@ -159,35 +160,44 @@ body {
 	position: relative;
 	z-index: -5;
 
+	.container_carousel {
+		display: flex;
+		flex-direction: row;
+	}
+
 	.poligono1 {
-		clip-path: circle(50% at 50% 50%);
+		border-radius: 0 0 800px 800px;
 		background: #5B8BC2;
-		height: 800px;
-		width: 800px;
+		height: 79vh;
+		width: 108vw;
 		position: absolute;
 		z-index: -1;
-		top: -300px;
-		right: -200px;
+		top: 0;
+		left: -10vw;
+		-webkit-border-radius: 0 0 800px 800px;
+		-moz-border-radius: 0 0 800px 800px;
+		-ms-border-radius: 0 0 800px 800px;
+		-o-border-radius: 0 0 800px 800px;
 	}
 	
-	.poligono2 {
+ /* .poligono2 {
 		width: 0px;
 		height: 0px;
-		border-right: 260px solid transparent;
-		border-top: 260px solid #6A96C8;
-		border-left: 260px solid #6A96C8;
-		border-bottom: 260px solid #6A96C8;
-		border-top-left-radius: 260px;
-		border-top-right-radius: 260px;
-		border-bottom-left-radius: 260px;
-		border-bottom-right-radius: 260px;
-		bottom: 0;
-		left: -100px;
+		border-right: 350px solid transparent;
+		border-top: 350px solid #6A96C8;
+		border-left: 350px solid #6A96C8;
+		border-bottom: 350px solid #6A96C8;
+		border-top-left-radius: 350px;
+		border-top-right-radius: 350px;
+		border-bottom-left-radius: 350px;
+		border-bottom-right-radius: 350px;
+		bottom: 50px;
+		left: -50px;
 		position: absolute;
-		z-index: -2;
-	}
+		z-index: -1;
+	} */
 	
-	.poligono3 {
+	/* .poligono3 {
 		clip-path: circle(50% at 50% 50%);
 		background:#79A0CD;
 		height: 1400px;
@@ -196,9 +206,9 @@ body {
 		top: -800px;
 		left: -500px;
 		z-index: -3;
-	}
+	} */
 	
-	.poligono4 {
+	/* .poligono4 {
 		clip-path: circle(50% at 50% 50%);
 		background:#88ABD3;
 		height: 1500px;
@@ -207,26 +217,40 @@ body {
 		z-index: -4;
 		top: -800px;
 		left: -300px;
-	}
+	} */
 
 	.principal_carousel {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		background: var(--primario);
-		height: 500px;
-		width: 400px;
-		height: 250px;
-		clip-path: inset(0% 0% 0% 0% round 5%);
+		height: 70vh;
+		width: 40vw;
+		border-radius: 60% 40% 40% 20%;
 	}
-} */
+}
+/* FIN Principal */
 
 /* Media queries */
 /* Pequeño */
 @media (max-width: 576px) {
-	.barra .barra_links {
-		display: none;
+	.barra {
+		.barra_links {
+			display: none;
+		}
+		.barra_dropdown {
+			display: block;
+		}
 	}
 
-	.barra .barra_dropdown {
-		display: block;
+	.seccion_principal {
+		.container_carousel {
+			flex-direction: column;
+		}
+
+		.principal_informacion {
+			order: 2;
+		}
 	}
 }
 
