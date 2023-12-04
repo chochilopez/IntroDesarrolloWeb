@@ -53,27 +53,27 @@ body {
 }
 
 .marca_logo {
-	height: 50px;
+	height: 70px;
 	padding: 5px;
 }
 
 .marca_kiosco {
 	font-family: var(--fuente2);
-	font-size: 22px;
+	font-size: 35px;
 }
 
 .marca_nombre {
 	margin-left: 5px;
 	font-weight: 800;
 	font-family: var(--fuente1);
-	font-size: 22px;
+	font-size: 35px;
 }
 
 .barra_links .link {
 	font-family: var(--fuente3);
 	color: var(--blanco);
+	font-size: 20px;
 	padding: 0 10px;
-	height: 35px;
 	border-radius: 3px;
 	border: 2px solid var(--primario);
 	transition: 0.5s linear;
@@ -82,14 +82,13 @@ body {
 .barra_links .icono {
 	color: var(--accion);
 	padding: 0 5px;
-	height: 35px;
 	transition: 0.3s linear;
+	font-size: 20px;
 }
 
 .barra_links .link:hover {
 	border: 2px solid var(--blanco);
 }
-
 
 .barra_links .icono:hover {
 	color: var(--blanco);
@@ -152,6 +151,7 @@ body {
 
 /* INICIO Principal */
 .seccion_principal {
+	overflow: hidden ;
 	background: #4C81BD;
 	height: 80vh;
 	border-radius: 0 0 150px 150px;
@@ -349,6 +349,16 @@ body {
 	background: var(--blanco);
 	min-height: 90vh;
 }
+
+.tarjetas_titulo .separador {
+	content: "";
+	display: block;
+	height: 60px;
+	background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300FDCF' stroke-width='15'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+	background-size: auto 100%;
+	background-repeat: round;
+	background-position: 0em;
+}
 /* FIN Tarjetas */
 
 /* Media queries */
@@ -362,6 +372,40 @@ body {
 			display: block;
 		}
 	}
+
+	/* .marca_logo {
+		height: 70px;
+		padding: 5px;
+	}
+
+	.marca_kiosco {
+		font-family: var(--fuente2);
+		font-size: 35px;
+	}
+
+	.marca_nombre {
+		margin-left: 5px;
+		font-weight: 800;
+		font-family: var(--fuente1);
+		font-size: 35px;
+	}
+
+	.barra_links .link {
+		font-family: var(--fuente3);
+		color: var(--blanco);
+		padding: 0 10px;
+		height: 35px;
+		border-radius: 3px;
+		border: 2px solid var(--primario);
+		transition: 0.5s linear;
+	}
+
+	.barra_links .icono {
+		color: var(--accion);
+		padding: 0 5px;
+		height: 35px;
+		transition: 0.3s linear;
+	} */
 
 	.seccion_principal {
 		height: 100vh;
@@ -400,8 +444,42 @@ body {
 
 /* Mediano */
 @media (min-width: 577px) and (max-width: 1000px) {
+	/* .marca_logo {
+		height: 70px;
+		padding: 5px;
+	}
+
+	.marca_kiosco {
+		font-family: var(--fuente2);
+		font-size: 35px;
+	}
+
+	.marca_nombre {
+		margin-left: 5px;
+		font-weight: 800;
+		font-family: var(--fuente1);
+		font-size: 35px;
+	}
+
+	.barra_links .link {
+		font-family: var(--fuente3);
+		color: var(--blanco);
+		padding: 0 10px;
+		height: 35px;
+		border-radius: 3px;
+		border: 2px solid var(--primario);
+		transition: 0.5s linear;
+	}
+
+	.barra_links .icono {
+		color: var(--accion);
+		padding: 0 5px;
+		height: 35px;
+		transition: 0.3s linear;
+	} */
+
 	.principal_informacion {
-		margin-left: 10px;
+		margin-left: 20px;
 	}
 	.principal_informacion .principal_subtitulo {
 		font-size: 20px;
@@ -415,7 +493,41 @@ body {
 }
 
 /* Largo */
-@media (min-width: 1001px) {}
+@media (min-width: 1001px) and (max-width: 1300px) {
+	/* .marca_logo {
+		height: 50px;
+		padding: 5px;
+	}
+
+	.marca_kiosco {
+		font-family: var(--fuente2);
+		font-size: 22px;
+	}
+
+	.marca_nombre {
+		margin-left: 5px;
+		font-weight: 800;
+		font-family: var(--fuente1);
+		font-size: 22px;
+	}
+
+	.barra_links .link {
+		font-family: var(--fuente3);
+		color: var(--blanco);
+		padding: 0 10px;
+		height: 35px;
+		border-radius: 3px;
+		border: 2px solid var(--primario);
+		transition: 0.5s linear;
+	}
+
+	.barra_links .icono {
+		color: var(--accion);
+		padding: 0 5px;
+		height: 35px;
+		transition: 0.3s linear;
+	} */
+}
 
 
 
