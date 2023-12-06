@@ -163,11 +163,6 @@ body {
 	overflow: hidden ;
 	background: #4C81BD;
 	height: 93.5vh;
-	border-radius: 0 0 150px 150px;
-	-webkit-border-radius: 0 0 150px 150px;
-	-moz-border-radius: 0 0 150px 150px;
-	-ms-border-radius: 0 0 150px 150px;
-	-o-border-radius: 0 0 150px 150px;
 	position: relative;
 	z-index: -5;
 	display: flex;
@@ -341,7 +336,7 @@ body {
 /* INICIO Tarjetas */
 .seccion_tarjetas {
 	background: var(--blanco);
-	min-height: 90vh;
+	height: 100vh;
 	position: relative;
 	overflow: hidden;
 	z-index: -10;
@@ -369,6 +364,28 @@ body {
 	font-family: var(--fuente4);
 }
 
+.tarjetas_contenedor {
+	display: flex;
+	justify-content: space-around;
+}
+
+.tarjetas_contenedor .basico, .tarjetas_contenedor .premium {
+	width: 400px;
+	height: 500px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+}
+
+.tarjetas_contenedor .estandar {
+	width: 500px;
+	height: 600px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.233);
+	border-radius: 50px;
+}
 
 /* Fondo electrones */
 .fondo_atomic{

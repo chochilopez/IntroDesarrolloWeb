@@ -1,0 +1,80 @@
+.borde {
+	border: 1px solid black;
+}
+
+.texto_contenedor {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.principal {
+	height: 99vh;
+	background: azure;
+	font-size: 2rem;
+	border: solid 4px mediumaquamarine;
+	display: flex;
+
+	.contenido {
+		width: 80%;
+		border: solid 4px mediumaquamarine;	
+	}
+
+	.barra {
+		width: 20%;
+		border: solid 4px mediumaquamarine;	
+	}
+}
+
+.principal_bs .col {
+	font-size: 2rem;
+}
+
+@media (max-width: 991px) {
+	.principal {
+		background: red;
+		flex-direction: column;
+	}
+	.principal .contenido {
+		width: 100%;
+	}
+	.principal .barra {
+		width: 100%;
+	}
+}
+
+/* X-Small None <576px */
+@media (max-width: 575px) {}
+
+/* Small sm ≥576px */
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/* Medium md ≥768px */
+@media (min-width: 768px) and (max-width: 991px) {
+	.principal {
+		font-size: 3rem;
+	}
+}
+
+/* Large lg ≥992px */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/* Extra large xl ≥1200px */
+@media (min-width: 1200px) and (max-width: 1399px) {}
+
+
+
+/*
+.principal {
+	.contenido {}
+	.barra{}
+	.a {}
+	.b {}
+	.c {}
+}
+=====
+.princiapal .contenido {}
+.princiapal .barra {}
+.princiapal .a {}
+.princiapal .b {}
+.princiapal .c {}
+*/
